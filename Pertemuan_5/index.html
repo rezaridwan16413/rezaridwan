@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Pertemuan 5</title>
+  </head>
+  <body>
+    <!-- tailwind css-->
+    <div class="bg-gray-900 sticky top-0">
+      <nav
+        class="text-white w-11/12 md:container mx-auto py-4 flex justify-between items-center"
+      >
+        <a href="" class="text-3xl font-bold">Blog</a>
+        <ul
+          class="menu hidden md:flex md:bg-gray-900 md:relative md:top-0 md:divide-y-0 md:w-auto"
+        >
+          <li class="px-7 py-1 hover:text-gray-500">
+            <a href="#services">Musik</a>
+          </li>
+          <li class="px-7 py-1 hover:text-gray-500">
+            <a href="#portofolio">Foto Saya</a>
+          </li>
+          <li class="px-7 py-1 hover:text-gray-500">
+            <a href="#about">Hobi</a>
+          </li>
+          <li class="px-7 py-1 hover:text-gray-500 md:hover:text-white">
+            <a
+              href=""
+              class="md:border-2 md:border-red-500 md:py-2 md:px-5 md:rounded-xl md:hover:bg-red-500 text-white"
+              >Tentang Saya</a
+            >
+          </li>
+        </ul>
+        <button class="hamburger-menu text-2xl md:hidden">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark hidden"></i>
+        </button>
+      </nav>
+    </div>
+
+    <!-- hero -->
+    <section class="bg-gray-900">
+      <div
+        class="container mx-auto text-center text-white h-screen flex items-center"
+      >
+        <div class="mx-auto w-3/4 md:w-2/4">
+          <a href="#Foto Saya" class="text-white py-2 px-5 rounded-xl"
+            ><h1>Tentang Saya</h1></a
+          >
+          <h3 class="text-5xl font-bold text-center mb-5">Reza Ridwan</h3>
+          <p class="text-white-500 mb-5">
+            Mahasiswa Pendidikan Komputer Universitas Mulawarman
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- services -->
+    <section id="services" class="bg-gray-200 py-20">
+      <div class="w-11/12 md:container mx-auto">
+        <h3 class="text-5xl font-bold text-center mb-5">Musik</h3>
+        <p class="text-gray-500 text-center mb-5">musik favorit</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- service 1-->
+          <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <div>
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/2JekYbWANgDe54Dndi2I2C?utm_source=generator"
+                width="100%"
+                height="352"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- service 2-->
+          <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <div>
+              <iframe
+                style="border-radius: 12px"
+                src="https://open.spotify.com/embed/track/26KhLgFuPymkm1uiZkc6Rv?utm_source=generator"
+                width="100%"
+                height="352"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- service 3-->
+          <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <div>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1zFaLYA10ImwEejge3F5nm?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- service 4-->
+          <div class="flex space-x-5 py-8 px-8 bg-white rounded-xl items-start">
+            <div>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4y5HTa0xfMGORsMhy26n3X?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portofolio -->
+    <section id="portofolio" class="py-20 bg-white">
+      <h3 class="text-5xl font-bold text-center mb-5">Foto Saya</h3>
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 w-11/12 md:container mx-auto gap-6">
+        <!-- portofolio 1-->
+        <div class="shadow-xl">
+          <a href="">
+            <img src="foto1.jpeg" class="w-full" />
+            <div class="py-3 px-5">
+              <h4 class="text-center font-bold">Foto Mahasiswa</h4>
+            </div>
+          </a>
+        </div>
+        <!-- portofolio 2-->
+        <div class="shadow-xl">
+          <a href="">
+            <img src="foto10.jpeg" class="w-full" />
+            <div class="py-3 px-5">
+              <h4 class="text-center font-bold">IKN Nusantara</h4>
+            </div>
+          </a>
+        </div>
+        <!-- portofolio 3-->
+        <div class="shadow-xl">
+          <a href="">
+            <img src="foto07.jpeg" class="w-full" />
+            <div class="py-3 px-5">
+              <h4 class="text-center font-bold">Wisata Samboja</h4>
+            </div>
+          </a>
+        </div>
+        <!-- portofolio 4-->
+        <div class="shadow-xl">
+          <a href="">
+            <img src="foto09.jpeg" class="w-full" />
+            <div class="py-3 px-5">
+              <h4 class="text-center font-bold">IKN Nusantara</h4>
+            </div>
+          </a>
+        </div>
+        <!-- portofolio 5-->
+        <div class="shadow-xl">
+          <a href="">
+            <img src="foto02.jpeg" class="w-full" />
+            <div class="py-3 px-5">
+              <h4 class="text-center font-bold">Pantai Nipah-Nipah</h4>
+            </div>
+          </a>
+        </div>
+        <!-- portofolio 6-->
+        <div class="shadow-xl">
+          <a href="">
+            <img src="foto05.jpeg" class="w-full" />
+            <div class="py-5 px-8">
+              <h4 class="text-center font-bold">Gunung Boga Kab.Paser</h4>
+            </div>
+          </a>
+        </div>
+        <!-- portofolio 7-->
+        <div class="shadow-xl">
+          <a href="">
+            <img src="foto06.jpeg" class="w-full" />
+            <div class="py-5 px-8">
+              <h4 class="text-center font-bold">Pantai Pasir Mayang</h4>
+            </div>
+          </a>
+        </div>
+        <!-- portofolio 8-->
+        <div class="shadow-xl">
+          <a href="">
+            <img src="foto04.jpeg" class="w-48 max-w-2xl" />
+            <div class="py-20 px-10">
+              <h4 class="text-center font-bold">IKN Nusantara</h4>
+            </div>
+          </a>
+        </div>
+        <!-- portofolio 9-->
+        <div class="shadow-xl">
+          <a href="">
+            <img src="foto03.jpeg" class="w-full max-w-2xl" />
+            <div class="py-3 px-5">
+              <h4 class="text-center font-bold">Gunung Nui</h4>
+            </div>
+          </a>
+        </div>
+        <!-- portofolio 10-->
+        <div class="shadow-xl">
+          <a href="">
+            <img src="foto08.jpeg" class="w-full" />
+            <div class="py-3 px-5">
+              <h4 class="text-center font-bold">Wisata Samboja</h4>
+            </div>
+          </a>
+        </div>
+        <!-- portofolio 11-->
+        <div class="shadow-xl">
+          <a href="">
+            <img src="foto11.jpeg" class="min-h-910" />
+            <div class="py-3 px-5">
+              <h4 class="text-center font-bold">Gunung Nui</h4>
+            </div>
+          </a>
+        </div>
+        <!-- portofolio 12-->
+        <div class="shadow-xl">
+          <a href="">
+            <img src="foto12.jpeg" class="w-full" />
+            <div class="py-3 px-5">
+              <h4 class="text-center font-bold">Gunung Boga Kab.Paser</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+    <section id="about" class="w-11/12 md:container mx-auto py-20">
+      <class=flex space-x-10 items-start>
+        <div>
+          <h3 class="text-5xl font-bold mb-5">Hobi</h3>
+          <p class="mb-5">Games</p>
+           <p class="mb-5">Futsal</p>
+          <p class="mb-5 pb-5 border-b border-gray-900">
+          Mendengarkan Musik
+          </p>
+          <ul class="md:flex md:space-x-5">
+            <li>
+              <a href=""><i class="fa-brands fa-tiktok"></i> rezaridwan325</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i> rezardwan_</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-youtube"></i> Reza Ridwan</a>
+            </li>
+          </ul>
+          </div>
+      </div>
+    </section>
+
+    <footer class="py-5 text-center font-bold"></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
